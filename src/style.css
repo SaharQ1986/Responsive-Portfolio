@@ -35,7 +35,7 @@ p {
 .hero-section {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 130px 20px;
 }
 .hero-section p {
   font-weight: bold;
