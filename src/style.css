@@ -9,6 +9,7 @@ font-family: 'Poppins', sans-serif; */
 }
 body {
   font-family: var(--default-font-family);
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -27,11 +28,41 @@ h1 {
 h2 {
   font-size: 62px;
 }
+h4 {
+  font-size: 48px;
+}
 p {
   font-size: 16px;
   font-weight: normal;
   line-height: 2;
 }
+.logo {
+  max-height: 40px;
+}
+nav {
+  padding: 25px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 16px;
+}
+nav a {
+  text-decoration: none;
+  color: #343a40;
+  transition: all 200ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 .hero-section {
   background: var(--secondary-color);
   text-align: center;
@@ -107,31 +138,37 @@ p {
 .project-desc {
   padding: 120px 60px;
 }
-.logo {
-  max-height: 40px;
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
 }
-nav {
-  padding: 25px 0;
-}
-nav ul {
+footer .contact-box p {
   margin: 0;
-  padding: 0;
 }
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 40px;
-  margin-left: 16px;
-}
-nav a {
+footer .email-link {
+  display: block;
   text-decoration: none;
+  font-size: 24px;
   color: #343a40;
-  transition: all 200ms ease-in-out;
+  text-align: center;
 }
-
-nav a:hover,
-nav li.active a {
+footer .email-link:hover {
   color: var(--branding-color);
+}
+footer .social-links a {
+  font-size: 18px;
+  margin-right: 18px;
+  padding: 10px 15px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  border-radius: 50%;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: #fff;
+  background: var(--branding-color);
 }
 @media (max-width: 900px) {
   h1 {
@@ -140,6 +177,12 @@ nav li.active a {
   }
   h2 {
     font-size: 40px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  nav a {
+    font-size: 16px;
   }
   .hero-section {
     padding: 86px 20px;
@@ -156,7 +199,13 @@ nav li.active a {
     padding: 0;
     text-align: center;
   }
-  nav a {
-    font-size: 16px;
+
+  footer .contact-box {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  footer .contact-box a {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
