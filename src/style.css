@@ -2,7 +2,7 @@
 font-family: 'Poppins', sans-serif; */
 
 :root {
-  --branding-color: #6741d9;
+  --branding-color: #0c8599;
   --secondary-color: #f8f9fa;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -120,7 +120,7 @@ nav li.active a {
   text-decoration: none;
 }
 .btn-branding:hover {
-  background: #7950f2;
+  background: #15aabf;
   color: #f3f0ff;
 }
 .btn-branding-outline {
